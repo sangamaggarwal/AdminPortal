@@ -6,7 +6,6 @@
 	<groupId>com.college</groupId>
 	<artifactId>AdminPortal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 
 	<name>AdminPortal</name>
 	<description>Admin Portal</description>
