@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
 <html lang="en">
+
 
 <head>
     <meta charset="utf-8">
@@ -9,18 +13,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/ui/images/favicon.png">
     <title>Ela - Bootstrap Admin Dashboard Template</title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/ui/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
 
-    <link href="../css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
-    <link href="../css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
-    <link href="../css/lib/owl.carousel.min.css" rel="stylesheet" />
-    <link href="../css/lib/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="../css/helper.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/ui/css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/ui/css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/ui/css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="${pageContext.request.contextPath}/ui/css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="${pageContext.request.contextPath}/ui/css/helper.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/ui/css/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
     <!--[if lt IE 9]>
@@ -42,12 +46,12 @@
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
                 <!-- Logo -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.jsp">
                         <!-- Logo icon -->
-                        <b><img src="images/logo.png" alt="homepage" class="dark-logo" /></b>
+                        <b><img src="${pageContext.request.contextPath}/ui/images/logo.png" alt="homepage" class="dark-logo" /></b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <span><img src="images/logo-text.png" alt="homepage" class="dark-logo" /></span>
+                        <span><img src="${pageContext.request.contextPath}/ui/images/logo-text.png" alt="homepage" class="dark-logo" /></span>
                     </a>
                 </div>
                 <!-- End Logo -->
@@ -186,28 +190,28 @@
                                         <div class="message-center">
                                             <!-- Message -->
                                             <a href="#">
-                                                <div class="user-img"> <img src="images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="user-img"> <img src="${pageContext.request.contextPath}/ui/images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
                                                 <div class="mail-contnet">
                                                     <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span>
                                                 </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
-                                                <div class="user-img"> <img src="images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                                <div class="user-img"> <img src="${pageContext.request.contextPath}/ui/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
                                                 <div class="mail-contnet">
                                                     <h5>John Doe</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
                                                 </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
-                                                <div class="user-img"> <img src="images/users/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                                <div class="user-img"> <img src="${pageContext.request.contextPath}/ui/images/users/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
                                                 <div class="mail-contnet">
                                                     <h5>Mr. John</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span>
                                                 </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
-                                                <div class="user-img"> <img src="images/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                                <div class="user-img"> <img src="${pageContext.request.contextPath}/ui/images/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
                                                 <div class="mail-contnet">
                                                     <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
                                                 </div>
@@ -223,7 +227,7 @@
                         <!-- End Messages -->
                         <!-- Profile -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/users/5.jpg" alt="user" class="profile-pic" /></a>
+                            <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="${pageContext.request.contextPath}/ui/images/users/5.jpg" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                                 <ul class="dropdown-user">
                                     <li><a href="#"><i class="ti-user"></i> Profile</a></li>
@@ -250,73 +254,73 @@
                         <li class="nav-label">Home</li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-primary pull-right">2</span></span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Ecommerce </a></li>
-                                <li><a href="index1.html">Analytics </a></li>
+                                <li><a href="${pageContext.request.contextPath}/ui/jsp/index.jsp">Ecommerce </a></li>
+                                <li><a href="index1.jsp">Analytics </a></li>
                             </ul>
                         </li>
                         <li class="nav-label">Apps</li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-envelope"></i><span class="hide-menu">Email</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="email-compose.html">Compose</a></li>
-                                <li><a href="email-read.html">Read</a></li>
-                                <li><a href="email-inbox.html">Inbox</a></li>
+                                <li><a href="${pageContext.request.contextPath}/ui/jsp/email-compose.jsp">Compose</a></li>
+                                <li><a href="${pageContext.request.contextPath}/ui/jsp/email-read.jsp">Read</a></li>
+                                <li><a href="${pageContext.request.contextPath}/ui/jsp/email-inbox.jsp">Inbox</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bar-chart"></i><span class="hide-menu">Charts</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="chart-flot.html">Flot</a></li>
-                                <li><a href="chart-morris.html">Morris</a></li>
-                                <li><a href="chart-chartjs.html">ChartJs</a></li>
-                                <li><a href="chart-chartist.html">Chartist </a></li>
-                                <li><a href="chart-amchart.html">AmChart</a></li>
-                                <li><a href="chart-echart.html">EChart</a></li>
-                                <li><a href="chart-sparkline.html">Sparkline</a></li>
-                                <li><a href="chart-peity.html">Peity</a></li>
+                                <li><a href="chart-flot.jsp">Flot</a></li>
+                                <li><a href="chart-morris.jsp">Morris</a></li>
+                                <li><a href="chart-chartjs.jsp">ChartJs</a></li>
+                                <li><a href="chart-chartist.jsp">Chartist </a></li>
+                                <li><a href="chart-amchart.jsp">AmChart</a></li>
+                                <li><a href="chart-echart.jsp">EChart</a></li>
+                                <li><a href="chart-sparkline.jsp">Sparkline</a></li>
+                                <li><a href="chart-peity.jsp">Peity</a></li>
                             </ul>
                         </li>
                         <li class="nav-label">Features</li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Bootstrap UI <span class="label label-rouded label-warning pull-right">6</span></span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="ui-alert.html">Alert</a></li>
-                                <li><a href="ui-button.html">Button</a></li>
-                                <li><a href="ui-dropdown.html">Dropdown</a></li>
-                                <li><a href="ui-progressbar.html">Progressbar</a></li>
-                                <li><a href="ui-tab.html">Tab</a></li>
-                                <li><a href="ui-typography.html">Typography</a></li>
+                                <li><a href="ui-alert.jsp">Alert</a></li>
+                                <li><a href="ui-button.jsp">Button</a></li>
+                                <li><a href="ui-dropdown.jsp">Dropdown</a></li>
+                                <li><a href="ui-progressbar.jsp">Progressbar</a></li>
+                                <li><a href="ui-tab.jsp">Tab</a></li>
+                                <li><a href="ui-typography.jsp">Typography</a></li>
                             </ul>
                         </li>
 						<li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Components <span class="label label-rouded label-danger pull-right">6</span></span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="uc-calender.html">Calender</a></li>
-                                <li><a href="uc-datamap.html">Datamap</a></li>
-                                <li><a href="uc-nestedable.html">Nestedable</a></li>
-                                <li><a href="uc-sweetalert.html">Sweetalert</a></li>
-                                <li><a href="uc-toastr.html">Toastr</a></li>
-                                <li><a href="uc-weather.html">Weather</a></li>
+                                <li><a href="uc-calender.jsp">Calender</a></li>
+                                <li><a href="uc-datamap.jsp">Datamap</a></li>
+                                <li><a href="uc-nestedable.jsp">Nestedable</a></li>
+                                <li><a href="uc-sweetalert.jsp">Sweetalert</a></li>
+                                <li><a href="uc-toastr.jsp">Toastr</a></li>
+                                <li><a href="uc-weather.jsp">Weather</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-wpforms"></i><span class="hide-menu">Forms</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="form-basic.html">Basic Forms</a></li>
-                                <li><a href="form-layout.html">Form Layout</a></li>
-                                <li><a href="form-validation.html">Form Validation</a></li>
-                                <li><a href="form-editor.html">Editor</a></li>
-                                <li><a href="form-dropzone.html">Dropzone</a></li>
+                                <li><a href="form-basic.jsp">Basic Forms</a></li>
+                                <li><a href="form-layout.jsp">Form Layout</a></li>
+                                <li><a href="form-validation.jsp">Form Validation</a></li>
+                                <li><a href="form-editor.jsp">Editor</a></li>
+                                <li><a href="form-dropzone.jsp">Dropzone</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Tables</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="table-bootstrap.html">Basic Tables</a></li>
-                                <li><a href="table-datatable.html">Data Tables</a></li>
+                                <li><a href="table-bootstrap.jsp">Basic Tables</a></li>
+                                <li><a href="table-datatable.jsp">Data Tables</a></li>
                             </ul>
                         </li>
                         <li class="nav-label">Layout</li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-columns"></i><span class="hide-menu">Layout</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="layout-blank.html">Blank</a></li>
-                                <li><a href="layout-boxed.html">Boxed</a></li>
-                                <li><a href="layout-fix-header.html">Fix Header</a></li>
-                                <li><a href="layout-fix-sidebar.html">Fix Sidebar</a></li>
+                                <li><a href="layout-blank.jsp">Blank</a></li>
+                                <li><a href="layout-boxed.jsp">Boxed</a></li>
+                                <li><a href="layout-fix-header.jsp">Fix Header</a></li>
+                                <li><a href="layout-fix-sidebar.jsp">Fix Sidebar</a></li>
                             </ul>
                         </li>
                         <li class="nav-label">EXTRA</li>
@@ -325,26 +329,26 @@
 
                                 <li><a href="#" class="has-arrow">Authentication <span class="label label-rounded label-success">6</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="page-login.html">Login</a></li>
-                                        <li><a href="page-register.html">Register</a></li>
-                                        <li><a href="page-invoice.html">Invoice</a></li>
+                                        <li><a href="page-login.jsp">Login</a></li>
+                                        <li><a href="page-register.jsp">Register</a></li>
+                                        <li><a href="page-invoice.jsp">Invoice</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#" class="has-arrow">Error Pages</a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="page-error-400.html">400</a></li>
-                                        <li><a href="page-error-403.html">403</a></li>
-                                        <li><a href="page-error-404.html">404</a></li>
-                                        <li><a href="page-error-500.html">500</a></li>
-                                        <li><a href="page-error-503.html">503</a></li>
+                                        <li><a href="page-error-400.jsp">400</a></li>
+                                        <li><a href="page-error-403.jsp">403</a></li>
+                                        <li><a href="page-error-404.jsp">404</a></li>
+                                        <li><a href="page-error-500.jsp">500</a></li>
+                                        <li><a href="page-error-503.jsp">503</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-map-marker"></i><span class="hide-menu">Maps</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="map-google.html">Google</a></li>
-                                <li><a href="map-vector.html">Vector</a></li>
+                                <li><a href="map-google.jsp">Google</a></li>
+                                <li><a href="map-vector.jsp">Vector</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-level-down"></i><span class="hide-menu">Multi level dd</span></a>
@@ -494,7 +498,7 @@
                                 <div class="testimonial-widget-one owl-carousel owl-theme">
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="images/avatar/2.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="${pageContext.request.contextPath}/ui/images/avatar/2.jpg" alt="" />
                                             <div class="testimonial-author">John</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -506,7 +510,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="images/avatar/3.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="${pageContext.request.contextPath}/ui/images/avatar/3.jpg" alt="" />
                                             <div class="testimonial-author">Abraham</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -518,7 +522,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="images/avatar/1.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="${pageContext.request.contextPath}/ui/images/avatar/1.jpg" alt="" />
                                             <div class="testimonial-author">Lincoln</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -530,7 +534,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="images/avatar/4.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="${pageContext.request.contextPath}/ui/images/avatar/4.jpg" alt="" />
                                             <div class="testimonial-author">TYRION LANNISTER</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -542,7 +546,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="images/avatar/5.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="${pageContext.request.contextPath}/ui/images/avatar/5.jpg" alt="" />
                                             <div class="testimonial-author">TYRION LANNISTER</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -554,7 +558,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="images/avatar/6.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="${pageContext.request.contextPath}/ui/images/avatar/6.jpg" alt="" />
                                             <div class="testimonial-author">TYRION LANNISTER</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -590,7 +594,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img src="images/avatar/4.jpg" alt=""></a>
+                                                        <a href=""><img src="${pageContext.request.contextPath}/ui/images/avatar/4.jpg" alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>John Abraham</td>
@@ -601,7 +605,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img src="images/avatar/2.jpg" alt=""></a>
+                                                        <a href=""><img src="${pageContext.request.contextPath}/ui/images/avatar/2.jpg" alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>John Abraham</td>
@@ -612,7 +616,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img src="images/avatar/3.jpg" alt=""></a>
+                                                        <a href=""><img src="${pageContext.request.contextPath}/ui/images/avatar/3.jpg" alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>John Abraham</td>
@@ -623,7 +627,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img src="images/avatar/4.jpg" alt=""></a>
+                                                        <a href=""><img src="${pageContext.request.contextPath}/ui/images/avatar/4.jpg" alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>John Abraham</td>
@@ -651,7 +655,7 @@
 								<div class="recent-comment">
 									<div class="media">
 										<div class="media-left">
-											<a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
+											<a href="#"><img alt="..." src="${pageContext.request.contextPath}/ui/images/avatar/1.jpg" class="media-object"></a>
 										</div>
 										<div class="media-body">
 											<h4 class="media-heading">john doe</h4>
@@ -661,7 +665,7 @@
 									</div>
 									<div class="media">
 										<div class="media-left">
-											<a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
+											<a href="#"><img alt="..." src="${pageContext.request.contextPath}/ui/images/avatar/1.jpg" class="media-object"></a>
 										</div>
 										<div class="media-body">
 											<h4 class="media-heading">john doe</h4>
@@ -672,7 +676,7 @@
 
 									<div class="media">
 										<div class="media-left">
-											<a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
+											<a href="#"><img alt="..." src="${pageContext.request.contextPath}/ui/images/avatar/1.jpg" class="media-object"></a>
 										</div>
 										<div class="media-body">
 											<h4 class="media-heading">john doe</h4>
@@ -683,7 +687,7 @@
 
 									<div class="media no-border">
 										<div class="media-left">
-											<a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
+											<a href="#"><img alt="..." src="${pageContext.request.contextPath}/ui/images/avatar/1.jpg" class="media-object"></a>
 										</div>
 										<div class="media-body">
 											<h4 class="media-heading">Mr. Michael</h4>
@@ -772,41 +776,41 @@
     </div>
     <!-- End Wrapper -->
     <!-- All Jquery -->
-    <script src="../js/lib/jquery/jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="../js/lib/bootstrap/js/popper.min.js"></script>
-    <script src="../js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/bootstrap/js/popper.min.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/bootstrap/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="../js/jquery.slimscroll.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/jquery.slimscroll.js"></script>
     <!--Menu sidebar -->
-    <script src="../js/sidebarmenu.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/sidebarmenu.js"></script>
     <!--stickey kit -->
-    <script src="../js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
 
 
     <!-- Amchart -->
-     <script src="../js/lib/morris-chart/raphael-min.js"></script>
-    <script src="../js/lib/morris-chart/morris.js"></script>
-    <script src="../js/lib/morris-chart/dashboard1-init.js"></script>
+     <script src="${pageContext.request.contextPath}/ui/js/lib/morris-chart/raphael-min.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/morris-chart/morris.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/morris-chart/dashboard1-init.js"></script>
 
 
-	<script src="../js/lib/calendar-2/moment.latest.min.js"></script>
+	<script src="${pageContext.request.contextPath}/ui/js/lib/calendar-2/moment.latest.min.js"></script>
     <!-- scripit init-->
-    <script src="../js/lib/calendar-2/semantic.ui.min.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/calendar-2/semantic.ui.min.js"></script>
     <!-- scripit init-->
-    <script src="../js/lib/calendar-2/prism.min.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/calendar-2/prism.min.js"></script>
     <!-- scripit init-->
-    <script src="../js/lib/calendar-2/pignose.calendar.min.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/calendar-2/pignose.calendar.min.js"></script>
     <!-- scripit init-->
-    <script src="../js/lib/calendar-2/pignose.init.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/calendar-2/pignose.init.js"></script>
 
-    <script src="../js/lib/owl-carousel/owl.carousel.min.js"></script>
-    <script src="../js/lib/owl-carousel/owl.carousel-init.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/lib/owl-carousel/owl.carousel-init.js"></script>
 
     <!-- scripit init-->
 
-    <script src="../js/scripts.js"></script>
+    <script src="${pageContext.request.contextPath}/ui/js/scripts.js"></script>
 
 </body>
 
