@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/AdminPortal-0.0.1-SNAPSHOT.jar -Dserver.port=8090 $JAR_OPTS
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/AdminPortal-0.0.1-SNAPSHOT.jar
