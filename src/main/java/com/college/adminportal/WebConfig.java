@@ -1,4 +1,4 @@
-package com.college.AdminPortal;
+package com.college.adminportal;
 
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

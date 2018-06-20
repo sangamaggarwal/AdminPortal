@@ -1,4 +1,4 @@
-package com.college.AdminPortal;
+package com.college.adminportal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

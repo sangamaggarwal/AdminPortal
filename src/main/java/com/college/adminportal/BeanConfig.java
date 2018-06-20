@@ -1,4 +1,4 @@
-package com.college.AdminPortal;
+package com.college.adminportal;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

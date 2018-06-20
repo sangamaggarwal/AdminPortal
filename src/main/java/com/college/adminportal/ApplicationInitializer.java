@@ -1,4 +1,4 @@
-package com.college.AdminPortal;
+package com.college.adminportal;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

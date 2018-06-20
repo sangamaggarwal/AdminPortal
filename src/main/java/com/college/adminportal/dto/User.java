@@ -1,4 +1,4 @@
-package com.college.AdminPortal.dto;
+package com.college.adminportal.dto;
 
 public class User {
 
