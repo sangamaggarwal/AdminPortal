@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.college.adminportal.entity.User;
 import com.college.adminportal.repository.RoleRepository;
 import com.college.adminportal.repository.UserRepository;
-import com.college.adminportal.repository.service.UserService;
+import com.college.adminportal.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {
